@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Document</title>
+     <link rel="stylesheet" type="text/css" href="/css/detail.css">
+     <script type="text/javascript" src="/libs/require/require.js" data-main = "/js/detail.js"></script>
+</head>
+<body>
+     <header></header>
+     <main>
+          <div class="sub-col">
+               <p><a href="jvascript:;">按种类</a></p>
+               <p><a href="javascript:;">按系列</a></p>
+          </div>
+          <div class="main-col" id="main-col">
+               <div class="main-top">
+                    <div class="top-col" id="zxh"></div>
+                    <script type="text/html" id="pro-temp">
+                         
+                              <div class="col-left">
+                                   <img src="{{ products.pic }}" id="deli-pic">
+                              </div>
+                              <div class="col-right">
+                                   <h4 class="proname" id="deli-name">{{ products.proname }}</h4>
+                                   <a href="javascript:;" class="share">分享</a>
+                                   <p class="ml">{{ products.ml }}mL</p>
+                                   <div class="details">
+                                        <span>详情：</span>轻果冻质地，一抹化水，清爽易吸收<br><br>
+                                        <span>功效：</span>轻果冻：质地，一抹化水，清爽易吸收轻果冻质地，一抹化水，清爽易吸收轻果冻质地，一抹化水，清爽易<br><br><span class="sec">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;柑橘精华：帮助肌肤产生透明质酸，修护肌肤锁水屏障，为肌肤补水同时帮助紧紧抓水。</span><br><br>
+                                        <span>使用方法：</span>轻果冻质地，一抹化水，清爽易吸收轻果冻质地，一抹化水，清爽易吸收轻果冻质地，一抹化水，清爽易吸收轻果冻质地，一抹化水，清爽易吸收轻果冻质地，一抹化水</p>
+                                   </div>
+                                   <div class="buy">
+                                        <div class="buy-num">
+                                             <label>数量：</label>
+                                             <span id="choosenum" class="choose">
+                                                  <a href="javascript:;" class="minus" id="minus">-</a>
+                                                  <input type="text" name="goods[num]" id="choose-num" class="show" value="1" min="1" max="">
+                                                  <a href="javascript:;" class="add" id="plus">+</a>
+                                             </span>
+                                             <span class="price">
+                                                  价格：<span>￥<span id="deli-price" class="pri">{{ products.pri }}</span></span>
+                                             </span>
+                                        </div>
+                                        <div class="buy-btn">
+                                             <button type="submit" class="btn-adP">加入购物车</button>
+                                             <button type="submit" class="btn-nowb">立即购买</button>
+                                             <a href="javascript:;" id="star">加入收藏</a>
+                                        </div>
+                                   </div>
+                              </div>
+                    </script>
+                    <ul>
+                         <li>官方正品保证</li>
+                         <li>全场免运费</li>
+                         <li>支付保障</li>
+                    </ul>
+               </div>
+               <div class="main-bot">
+                    <p>相关商品推荐</p>
+                    <ul id="main-buy"></ul>
+                         <script type="text/html" id="pro-template">
+                         {{each products}}
+                              <li>
+                                   <a href="/html/detail.html?id={{ $value.id }}"><img src="{{ $value.img }}"></a>
+                                   <a href="javascript:;" class="name">{{ $value.name }}</a>
+                                   <p class="ml">{{ $value.ml }}mL</p>
+                                   <p class="price">￥{{ $value.price }}</p>
+                                   <a href="javascript:;" class="btn-adP">加入购物车</a>
+                              </li>
+                         {{/each}}
+                         </script>
+               </div>
+          </div>
+     </main>
+     <footer></footer>
+</body>
+</html>

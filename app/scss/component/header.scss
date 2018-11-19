@@ -1,0 +1,435 @@
+header{
+     height: 166px;
+     width: 100%;
+     .top{
+          height: 36px;
+          width: 100%;
+          background: #000000;
+          .wrap{
+               width: 1000px;
+               height: 114px;
+               margin: 0 auto;
+               position: relative;
+               &>div{
+                    color: #ffffff;
+                    font-size: 12px;
+                    height: 36px;
+                    width: 100px;
+                    line-height: 36px;
+                    float: left;
+                    &:nth-child(2){
+                         margin-left: 760px;
+                         width: 72px;
+                         &>a{
+                         color: #ffffff;
+                         display: inline-block;
+                         width: 54px;
+                         height: 36px;
+                         }
+                    }
+                    &:nth-child(3){
+                         width: 67px;
+                         &>a{
+                              color: #ffffff;
+                         }
+                    }
+               }
+          }
+     }
+     .logo{
+          height: 80px;
+          width: 100%;
+          margin: 0 auto;
+          text-align: center;
+          a{
+               width: 185px;
+               height: 80px;
+               display: inline-block;
+               img{
+                    width: 185px;
+                    height: 80px;
+                    position: relative;
+                    z-index: 999;
+               }
+          }
+     }
+     /* nav */
+     .nav{
+          height: 50px;
+          width: 100%;
+          background: white;
+          position: relative;
+          z-index: 999;
+          .navegater{
+               display: flex;
+               height: 50px;
+               margin-left: 140px;
+               float: left;
+               &>li{
+                    height: 44px;
+                    line-height: 13px;
+                    padding: 0 10px;
+                    font-size: 14px;
+                    padding-top: 17px;
+                    font-family: "微软雅黑","宋体";
+                    border-left: 1px solid white;
+                    border-right: 1px solid white;
+                    .second{
+                         width: 1264px;
+                         height: 590px;
+                         position: absolute;
+                         background: white;
+                         top:40px;
+                         left: -195px;
+                         background-image: url(../img/aa03.png);
+                         background-color: white;
+                         background-repeat: no-repeat; 
+                         background-position: 0px 5px;
+                         background-size: 1264px 6px;
+                         display: none;
+                         .left{
+                              width: 438px;
+                              height: 590px;
+                              margin-left: 185px;
+                              font-size: 14px;
+                              float: left;
+                              &>a{
+                                   color: #666666;
+                                   display: inline-block;
+                                   height: 48px;
+                                   width: 45px;
+                                   line-height: 57px;
+                                   &:hover{
+                                        color: #000000;
+                                   }
+                              }
+                              ul{
+                                   height: 508px;
+                                   width: 438px;
+                                   display: flex;
+                                   flex-wrap: wrap;
+                                   border-top: 1px solid #ccc;
+                                   justify-content: space-between;
+                                   align-items: center;
+                                   li{
+                                        width: 213px;
+                                        height: 87px;
+                                        a{
+                                             display: inline-block;
+                                             width: 213px;
+                                             height: 87px;
+                                        }
+                                        img{
+                                             width: 213px;
+                                             height: 87px;
+                                        }
+                                   }
+                              }
+                         }
+                         .center{
+                              width: 187px;
+                              height: 350px;
+                              font-size: 14px;
+                              margin: 0 40px;
+                              float: left;
+                              &>a{
+                                   color: #666666;
+                                   display: inline-block;
+                                   height: 48px;
+                                   line-height: 57px;
+                                   &:hover{
+                                        color: #000000;
+                                   }
+                              }
+                              &>ul{
+                                   height: 290px;
+                                   border-top: 1px solid #ccc;
+                                   li{
+                                        height: 37px;
+                                        line-height: 37px;
+                                        &>a{
+                                             color: #666666;
+                                             height: 37px;
+                                             line-height: 37px;
+                                        }
+                                        &:hover>a{
+                                             color: #000000;
+                                        }
+                                   }
+                              }
+                         }
+                         .right{
+                              width: 186px;
+                              height: 266px;
+                              font-size: 14px;
+                              float: left;
+                              &>a{
+                                   color: #666666;
+                                   display: inline-block;
+                                   height: 48px;
+                                   line-height: 57px;
+                                   &:hover{
+                                        color: #000000;
+                                   }
+                              }
+                              &>ul{
+                                   height: 290px;
+                                   border-top: 1px solid #ccc;
+                                   li{
+                                        height: 37px;
+                                        line-height: 37px;
+                                        a{
+                                             height: 37px;
+                                             line-height: 37px;
+                                        }
+                                   }
+                              }
+                         }
+
+                    }
+                    .three{
+                         width: 1264px;
+                         height: 590px;
+                         position: absolute;
+                         top:40px;
+                         left: -246px;
+                         background-image: url(../img/aa03.png);
+                         background-color: white;
+                         background-repeat: no-repeat; 
+                         background-position: 0px 5px;
+                         background-size: 1264px 6px;
+                         display: none;
+                         .left{
+                              width: 438px;
+                              height: 590px;
+                              margin-left: 185px;
+                              font-size: 14px;
+                              float: left;
+                              a{
+                                   color: #666666;
+                                   display: inline-block;
+                                   height: 48px;
+                                   width: 45px;
+                                   line-height: 57px;
+                                   &:hover{
+                                        color: #000000;
+                                   }
+                              }
+                              ul{
+                                   height: 205px;
+                                   width: 438px;
+                                   display: flex;
+                                   flex-wrap: wrap;
+                                   border-top: 1px solid #ccc;
+                                   justify-content: space-between;
+                                   align-items: center;
+                                   li{
+                                        width: 213px;
+                                        height: 87px;
+                                        a{
+                                             display: inline-block;
+                                             width: 213px;
+                                             height: 87px;
+                                        }
+                                        img{
+                                             width: 213px;
+                                             height: 87px;
+                                        }
+                                   }
+                              }
+                         }
+                         .face{
+                              height: 240px;
+                              float: left;
+                              margin-right: 17px;
+                              margin-left: 42px;
+                              a{
+                                   color: #666666;
+                                   display: inline-block;
+                                   height: 48px;
+                                   width: 45px;
+                                   line-height: 57px;
+                                   &:hover{
+                                        color: #000000;
+                                   }
+                              }
+                              ul{
+                                   height: 192px;
+                                   width: 90px;
+                                   border-top: 1px solid #ccc;
+                                   li{
+                                        width: 90px;
+                                        height: 35px;
+                                        a{
+                                             display: inline-block;
+                                             width: 90px;
+                                             height: 35px;
+                                             line-height: 35px;
+                                        }
+                                   }
+                              }
+                         }
+                         .eye{
+                              height: 205px;
+                              float: left;
+                              padding-right: 17px;
+                              a{
+                                   color: #666666;
+                                   display: inline-block;
+                                   height: 48px;
+                                   width: 45px;
+                                   line-height: 57px;
+                                   &:hover{
+                                        color: #000000;
+                                   }
+                              }
+                              ul{
+                                   height: 158px;
+                                   width: 90px;
+                                   border-top: 1px solid #ccc;
+                                   li{
+                                        width: 90px;
+                                        height: 35px;
+                                        a{
+                                             display: inline-block;
+                                             width: 90px;
+                                             height: 35px;
+                                             line-height: 35px;
+                                        }
+                                   }
+                              }
+                         }
+                         
+                         .lip{
+                              height: 132px;
+                              float: left;
+                              padding-right: 17px;
+                              a{
+                                   color: #666666;
+                                   display: inline-block;
+                                   height: 48px;
+                                   width: 45px;
+                                   line-height: 57px;
+                                   &:hover{
+                                        color: #000000;
+                                   }
+                              }
+                              ul{
+                                   height: 82px;
+                                   width: 90px;
+                                   border-top: 1px solid #ccc;
+                                   li{
+                                        width: 90px;
+                                        height: 35px;
+                                        a{
+                                             display: inline-block;
+                                             width: 90px;
+                                             height: 35px;
+                                             line-height: 35px;
+                                        }
+                                   }
+                              }
+                         }
+                         .other{
+                              height: 168px;
+                              float: left;
+                              padding-right: 17px;
+                              a{
+                                   color: #666666;
+                                   display: inline-block;
+                                   height: 48px;
+                                   width: 58px;
+                                   line-height: 57px;
+                                   &:hover{
+                                        color: #000000;
+                                   }
+                              }
+                              ul{
+                                   height: 120px;
+                                   width: 90px;
+                                   border-top: 1px solid #ccc;
+                                   li{
+                                        width: 90px;
+                                        height: 35px;
+                                        a{
+                                             display: inline-block;
+                                             width: 90px;
+                                             height: 35px;
+                                             line-height: 35px;
+                                        }
+                                   }
+                              }
+                         }
+                    }
+                    &:nth-child(2){
+                         position: relative;
+                         height: 50px;
+                    }
+                    &:nth-child(3){
+                         position: relative;
+                         height: 50px;
+                    }
+                    &:nth-child(8){
+                         padding-right: 20px;
+                    }
+                    &:nth-child(2):hover{
+                         border-left: 1px solid #ccc;
+                         border-right: 1px solid #ccc;
+                         border-bottom: 6px solid white;
+                         .second{
+                              display: block;
+                         }
+                    }
+                    &:nth-child(2):hover .h{
+                         z-index: 999;
+                         background: white;
+                    }
+                    &:nth-child(3):hover{
+                         border-left: 1px solid #ccc;
+                         border-right: 1px solid #ccc;
+                         border-bottom: 6px solid white;
+                         .three{
+                              display: block;
+                         }
+                    }
+                    &:nth-child(3):hover .h{
+                         z-index: 999;
+                         background: white;
+                    }
+                    &:hover>a{
+                         color: #c1082e;
+                    }
+                    a span{
+                         display: inline-block;
+                         height: 13px;
+                         padding-right: 15px;
+                    }
+               } 
+          }
+          .search{
+               margin-right: 160px;
+               width: 184px;
+               height: 30px;
+               border: 1px solid #d8d8d8;
+               float: right;
+               overflow: hidden;
+               margin-top: 7px;
+               input{
+                    width: 154px;
+                    height: 28px;
+                    line-height: 28px;
+                    border: none;
+                    padding-left: 7px;
+                    font-size: 12px;
+                    float: left;
+               }
+               button{
+                    width: 28px;
+                    height: 28px;
+                    background: url(/img/sousuo.png) center no-repeat;
+                    float: left;
+                    border: none;
+               }
+          }
+     }
+}

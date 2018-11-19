@@ -1,0 +1,274 @@
+@import "component/reset.scss";
+@import "component/header.scss";
+@import "component/footer.scss";
+
+main{
+     width: 980px;
+     height: 1006px;
+     margin: 0 auto;
+     padding-top: 52px;
+     .sub-col{
+          width: 138px;
+          height: 70px;
+          float: left;
+          p{
+               height: 35px;
+               width: 150px;
+               line-height: 33px;
+               font-size: 14px;
+               background: url(/img/left.png) no-repeat 120px center;
+               a{
+                    color: #7b7b7b;
+                    display: inline-block;
+                    height: 35px;
+                    width: 150px;
+               }
+          }
+     }
+     .main-col{
+          width: 842px;
+          height: 956px;
+          float: right;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          .main-top{
+               height: 506px;
+               width: 842px;
+               .top-col{
+                    height: 458px;
+                    width: 842px;
+                    .col-left{
+                         width: 337px;
+                         height: 458px;
+                         float: left;
+                         img{
+                              width: 300px;
+                              height: 300px;
+                         }
+                    }
+                    .col-right{
+                         width: 505px;
+                         height: 458px;
+                         float: right;
+                         h4{
+                              font-weight: normal;
+                              font-size: 20px;
+                              width: 312px;
+                              height: 33px;
+                              float: left;
+                         }
+                         .share{
+                              display: inline-block;
+                              width: 70px;
+                              height: 33px;
+                              float: right;
+                              background: url(/img/share.png) 24px 7px no-repeat;
+                              font-size: 12px;
+                              color: #7c0d02;
+                              line-height: 29px;
+                              text-align: right;
+                         }
+                         &>p{
+                              font-size: 14px;
+                              margin-top: 33px;
+                              margin-bottom: 10px;
+                              height: 37px;
+                              line-height: 37px;
+                              color: #7c0d02;
+                              border-bottom: 1px solid #a8a9ad;
+                         }
+                         .details{
+                              height: 222px;
+                              width: 505px;
+                              font-size: 14px;
+                              span{
+                                   font-weight: bold;
+                              }
+                              .sec{
+                                   font-weight: normal;
+                              }
+                         }
+                         .buy{
+                              width: 503px;
+                              height: 118px;
+                              padding: 18px 0;
+                              .buy-num{
+                                   height: 33px;
+                                   width: 503px;
+                                   line-height: 33px;
+                                   margin-bottom: 17px;
+                                   label{
+                                        font-size: 12px;
+                                        float: left;
+                                   }
+                                   .choose{
+                                        display: inline-block;
+                                        width: 126px;
+                                        height: 26px;
+                                        float: left;
+                                        border: 1px solid #a9a9a9;
+                                        margin-top: 3px;
+                                        a{
+                                             height: 24px;
+                                             width: 27px;
+                                             display: inline-block;
+                                             text-align: center;
+                                             line-height: 26px;
+                                             background: #eeeeee;
+                                             float: left;
+                                             &:nth-child(1){
+                                                  border-right: 1px solid #a9a9a9;
+                                             }
+                                             &:nth-child(3){
+                                                  border-left: 1px solid #a9a9a9;
+                                             }
+                                        }
+                                        input{
+                                             width: 68px;
+                                             height: 24px;
+                                             float: left;
+                                             border: none;
+                                             text-align: center;
+                                             font-size: 15px;
+                                        }
+                                   }
+                                   .price{
+                                        float: right;
+                                        display: inline-block;
+                                        height: 37px;
+                                        width: 111px;
+                                        font-size: 14px;
+                                        span{
+                                             font-size: 25px;
+                                             color: #7c0d02;
+                                        }
+                                   }
+                              }
+                              .buy-btn{
+                                   width: 503px;
+                                   height: 35px;
+                                   button{
+                                        width: 130px;
+                                        height: 35px;
+                                        background: #fff;
+                                        border: none;
+                                        font-size: 12px;
+                                        &:nth-child(1){
+                                             border: 1px solid #7c0d02;
+                                             color: #7c0d02;
+                                             margin-right: 5px;
+                                        }
+                                        &:nth-child(2){
+                                             background: #7c0d02;
+                                             color: #fff;
+                                        }
+                                   }
+                                   a{
+                                        display: inline-block;
+                                        height: 36px;
+                                        line-height: 36px;
+                                        width: 80px;
+                                        font-size: 12px;
+                                        background: url(/img/star.png) 5px center no-repeat;
+                                        text-align: right;
+                                        margin-left: 10px;
+                                   }
+                              }
+                         }
+                    }
+               }
+               ul{
+                    height: 50px;
+                    background: #eeeeee;
+                    border-bottom: 1px solid #7c0d02;
+                    display: flex;
+                    justify-content: space-around;
+                    li{
+                         width: 112px;
+                         height: 50px;
+                         text-align: right;
+                         line-height: 50px;
+                         font-size: 14px;
+                         color: #7c0d02;
+                         &:nth-child(1){
+                              background: url(/img/official.png) 5px 16px no-repeat;
+                         }
+                         &:nth-child(2){
+                              text-align: center;
+                              background: url(/img/free.png) 0px 16px no-repeat;
+                         }
+                         &:nth-child(3){
+                              text-align: center;
+                              background: url(/img/security.png) 5px 16px no-repeat;
+                         }
+                    }
+               }
+          }
+          .main-bot{
+               height: 446px;
+               width: 842px;
+               &>p{
+                    width: 842px;
+                    height: 49px;
+                    line-height: 46px;
+                    font-size: 16px;
+                    color: #7c0d02;
+                    border-bottom: 4px solid #7c0d02;
+                    margin-bottom: 30px;
+               }
+               ul{
+                    width: 755px;
+                    height: 355px;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-around;
+                    text-align: center;
+                    li{
+                         width: 167px;
+                         height: 335px;
+                         a{
+                              width: 167px;
+                              display: inline-block;
+                              &:nth-child(1){
+                                   height: 167px;
+                                   width: 167px;
+                                   img{
+                                        height: 167px;
+                                        width: 167px;
+                                   }
+                              }
+                              &:nth-child(2){
+                                   height: 33px;
+                                   line-height: 33px;
+                                   font-size: 14px;
+                                   margin-bottom: 30px;
+                              }
+                              &:nth-child(5){
+                                   width: 100px;
+                                   height: 29px;
+                                   line-height: 29px;
+                                   font-size: 14px;
+                                   color: #fff;
+                                   background: #7c0d02;
+                              }
+                         }
+                         p{
+                              font-size: 14px;
+                              &:nth-child(3){
+                                   height: 21px;
+                                   line-height: 21px;
+                              }
+                              &:nth-child(4){
+                                   height: 40px;
+                                   line-height: 40px;
+                                   color: #7c0d02;
+                                   font-size: 18px;
+                                   margin-bottom: 4px;
+                              }
+                         }
+                    }
+               }
+          }
+     }
+}

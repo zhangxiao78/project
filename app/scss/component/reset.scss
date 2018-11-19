@@ -1,0 +1,17 @@
+/*重置样式*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, div, span, input, header, footer, main{ margin:0; padding:0;box-sizing: border-box;font-family: "微软雅黑","宋体";}
+fieldset, img { border:none;vertical-align:middle;}
+h1,h2,h3,h4,h5,h6{font-family: "微软雅黑","宋体";}
+em, b, strong, i{ font-style:normal; font-family: "微软雅黑","宋体"; }
+ul, ol { list-style:none; }
+a { color:black; text-decoration:none; font-family: "微软雅黑","宋体";}
+.clearfix::after{
+	display: block;
+	height: 0;
+	content: "";
+	visibility: hidden;
+	clear: both;
+}
+.clearfix{
+	zoom: 1;
+}

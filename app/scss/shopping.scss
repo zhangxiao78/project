@@ -1,0 +1,261 @@
+@import "component/reset.scss";
+@import "component/header.scss";
+@import "component/footer.scss";
+
+
+// 购买流程图
+.move{
+     width: 979px;
+     height: 40px;
+     margin: 0 auto 15px;
+     display: flex;
+     li{
+          width: 163px;
+          height: 40px;
+          text-align: center;
+          margin-right: 24px;
+          background: #a7a9ac;
+          color: #ffffff;
+          font-size: 14px;
+          line-height: 40px;
+          position: relative;
+          &:nth-child(1){
+               background: #ba2620;
+          }
+          span{
+               display: inline-block;
+               width: 15px;
+               height: 16px;
+               position: absolute;
+               top:12px;
+               left:168px;
+               background: url(/img/right.png) no-repeat;
+          }
+     }
+}
+
+
+// 购物车空时
+.empty{
+     height: 69px;
+     width: 100%;
+     display: block;
+     .e-wrap{
+          border: 2px solid #d5d5d5;
+          width: 944px;
+          height:47px;
+          margin-left: 142px; 
+          margin-bottom: 22px;
+          text-align: center;
+          line-height: 47px;
+          font-size: 12px;
+          color: #7c0d02;
+          font-style: oblique;
+     }
+}
+
+
+// 购物车有商品时
+.cart{
+     width: 955px;
+     height: 100%;
+     margin: 0 auto;
+     border-collapse: collapse;
+     display: none;
+     thead{
+          .cart-head{
+               height: 46px;
+               width: 955px;
+               th{
+                    font-weight: normal;
+                    color: #670205;
+                    border-top: 1px solid #7c0d02;
+                    border-bottom: 4px solid #7c0d02;
+                    &:nth-child(1){
+                         width: 203px;
+                         height: 39px;
+                    }
+                    &:nth-child(2){
+                         width: 250px;
+                         height: 39px;
+                    }
+                    &:nth-child(3){
+                         width: 133px;
+                         height: 39px;
+                    }
+                    &:nth-child(4){
+                         width: 96px;
+                         height: 39px;
+                    }
+                    &:nth-child(5){
+                         width: 144px;
+                         height: 39px;
+                    }
+               }
+          }
+     }
+     // 购物车条目
+     tbody{
+          width: 955px;
+          display: none;
+          .cart-main{
+               width: 955px;
+               height: 149px;
+               border-bottom: 1px solid #7c0d02;
+               .add-pic{
+                    height: 149px;
+                    width: 181px;
+                    padding: 6px 0;
+                    a{
+                         display: inline-block;
+                         height: 105px;
+                         width: 105px;
+                         border: 1px solid #808285;
+                         img{
+                              height: 105px;
+                              width: 105px;
+                              background:#fff;
+                         }
+                    }
+               }
+               .add-name{
+                    width: 260px;
+                    height: 149px;
+               }
+               .add-price{
+                    width: 133px;
+                    height: 149px;
+                    text-align: center;
+                    color: #7c0d02;
+                    font-weight: bold;
+                    font-size: 15px;
+               }
+               .add-num{
+                    span{
+                         width: 98px;
+                         height: 24px;
+                         display: inline-block;
+                         border: 1px solid #a9a9a9;
+                         a{
+                              height: 22px;
+                              width: 27px;
+                              display: inline-block;
+                              text-align: center;
+                              line-height: 20px;
+                              background: #eeeeee;
+                              float: left;
+                              &:nth-child(1){
+                                   border-right: 1px solid #a9a9a9;
+                              }
+                              &:nth-child(3){
+                                   border-left: 1px solid #a9a9a9;
+                              }
+                         }
+                         input{
+                              width: 40px;
+                              height: 22px;
+                              float: left;
+                              border: none;
+                              text-align: center;
+                              font-size: 15px;
+                         }
+                    }
+               }
+               .add-subtotal{
+                    width: 134px;
+                    height: 149px;
+                    text-align: center;
+                    color: #7c0d02;
+                    font-weight: bold;
+                    font-size: 15px;
+               }
+               .add-remove{
+                    width: 107px;
+                    height: 149px;
+                    text-align: center;
+                    a{
+                         display: inline-block;
+                         height: 26px;
+                         width: 107px;
+                         line-height: 26px;
+                         color: #7c0d02;
+                         text-align: center;
+                         &:nth-child(1){
+                              background: url(/img/ljt.png) 7px 2px no-repeat;
+                         }
+                         &:last-child{
+                              background: url(/img/star.png) 7px 4px no-repeat;
+                         }
+                    }
+               }
+          }
+     }
+     // 结算
+     tfoot{
+          width: 955px;
+          height: 73px;
+          .cart-balance{
+               height: 73px;
+               width: 955px;
+               .total{
+                    height: 73px;
+                    font-size: 14px;
+                    span{
+                         display: inline-block;
+                         width: 150px;
+                         margin-left: 50px;
+                         font-size: 18px;
+                         color: #7c0d02;
+                    }
+               }
+               .btn{
+                    text-align: center;
+                    line-height: 32px;
+                    font-size: 14px;
+                    &>a{
+                         float: right;
+                         display: inline-block;
+                         width: 114px;
+                         height: 32px;
+                         background: #7c0d02;
+                         color: #fff;
+                    }
+                    button{
+                         float: right;
+                         width: 114px;
+                         height: 32px;
+                         border: 1px solid #7c0d02;
+                         background: #fff;
+                         color: #ba2620;
+                    }
+               }
+          }
+     }
+}
+
+// 官方承诺
+.prom{
+     width: 955px;
+     height: 46px;
+     margin: 0 auto;
+     background: #eeeeee;
+     margin-bottom: 40px;
+     display: flex;
+     li{
+          width: 318px;
+          height: 46px;
+          text-align: center;
+          line-height: 46px;
+          font-size: 14px;
+          color: #7c0d02;
+          &:nth-child(1){
+               background: url(/img/official.png) 94px 14px no-repeat;
+          }
+          &:nth-child(2){
+               background: url(/img/free.png) 100px 14px no-repeat;
+          }
+          &:nth-child(3){
+               background: url(/img/security.png) 108px 14px no-repeat;
+          }
+     }
+}

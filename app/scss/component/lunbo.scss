@@ -1,0 +1,39 @@
+
+#lunbo {
+     width:1920px;
+     height:500px; 
+     margin:0 auto; 
+     overflow:hidden; 
+     position:relative;
+     background: #ccc;
+     ul li{
+          height:500px;
+          position: absolute;
+          left: -322px;
+          top: 0;
+          z-index: 0;
+          display: none;
+          img{width:1920px; height:500px;}
+          .ac{z-index: 5;}
+     }
+     &>a{
+          position: absolute;
+          top: 50%;
+          margin-top: -10px;
+          display: inline-block;
+          height: 60px;
+          line-height: 60px;
+          text-align: center;
+          width: 60px;
+          vertical-align: middle;
+          z-index:6;
+          &+a{
+               position: absolute;
+               left: 1200px;
+          }
+          img{
+               width: 60px;
+               height: 60px;
+          }
+     }
+}

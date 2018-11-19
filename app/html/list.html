@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Document</title>
+     <link rel="stylesheet" type="text/css" href="/css/list.css">
+     <script type="text/javascript" src="/libs/require/require.js" data-main = "/js/list.js"></script>
+</head>
+<body>
+     <header></header>
+     <!--nav-->
+     <div class="nav-back">
+          <a href="http://localhost:2333">首页</a>
+          <span>&raquo;</span>
+          <a href="javasceipt:;">男士</a>
+     </div>
+     <p>男士</p>
+     <!-- main -->
+     <main>
+          <div class="nav-col">
+               <a href="javascript:;" id="sort">排序</a>
+               <ul class="sort">
+                    <li><a href="javascript:;">价格从高到低</a></li>
+                    <li><a href="javascript:;">价格从低到高</a></li>
+                    <li><a href="javascript:;">销量从高到低</a></li>
+                    <li><a href="javascript:;">销量从低到高</a></li>
+               </ul>
+               <span>产品总数：8</span>
+          </div>
+          <div class="sub-col">
+               <div>
+                    <a href="jvascript:;" id="kind">按种类</a>
+                    <ul class="kind">
+                         <li><a href="javascript:;">卸妆·洁面</a></li>
+                         <li><a href="javascript:;">化妆水</a></li>
+                         <li><a href="javascript:;">乳液·面霜</a></li>
+                         <li><a href="javascript:;">眼唇护理</a></li>
+                         <li><a href="javascript:;">精华液</a></li>
+                    </ul>
+               </div>
+               <div>
+                    <a href="javascript:;" id="set">按系列</a>
+                    <ul class="set">
+                         <li><a href="javascript:;">男士系列</a></li>
+                    </ul>
+               </div>
+               
+          </div>
+          <div class="main-col" id="main-col"></div>
+               <script type="text/html" id="pro-template">
+               {{each products}}
+				<dl><a href="javasceipt:;">
+					<dt><a href="/html/detail.html?id={{ $value.id }}"><img src="{{ $value.img }}" id="car-pic"></a></dt>
+                         <dd class="dl1">
+                              <span class="name" id="car-name">{{ $value.name }}</span><br/>
+                              <span class="ml">{{ $value.ml }}mL</span>
+                              <h5 class="price" id="car-price">￥{{ $value.price }}</h5>
+                              <a href="javascript:;" class="addMe">加入购物车</a><br/>
+                              <a href="/html/detail.html?id={{ $value.id }}">详情</a>
+                         </dd>
+                    </a></dl>
+               {{/each}}
+               </script>
+          
+     </main>
+     
+     <footer></footer>
+</body>
+</html>

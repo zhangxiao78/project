@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Document</title>
+     <link rel="stylesheet" type="text/css" href="/css/shopping.css">
+     <script type="text/javascript" src="/libs/require/require.js" data-main = "/js/shopping.js"></script>
+</head>
+<body>
+     <header></header>
+
+     <!-- 购买流程图 -->
+     <ul class="move">
+          <li>购物车<span></span></li>
+          <li>订单信息<span></span></li>
+          <li>确定及付款<span></span></li>
+          <li>完成</li>
+     </ul>
+
+     <!-- 购物车空时 -->
+     <div class="empty">
+          <div class="e-wrap">购物车内没有商品。</div>
+     </div>
+
+     <!-- 购物车有商品时 -->
+     <table class="cart">
+          <thead>
+               <tr class="cart-head">
+                    <th>商品</th>
+                    <th>&nbsp;</th>
+                    <th>单价（元）</th>
+                    <th>数量</th>
+                    <th>小计（元）</th>
+                    <th>操作</th>
+               </tr>
+          </thead>
+          
+          <!-- 购物车条目 -->
+          <tbody id="cart-zxh"></tbody>
+
+               <script type="text/html" id="pro-temp">
+               {{each product}}
+               <tr class="cart-main">
+                    <td class="add-pic">
+                         <a href="/html/detail.html" target="_blank">
+                              <img src="{{ $value.pic }}">
+                         </a>
+                    </td>
+                    <td class="add-name">{{ $value.name }}</td>
+                    <td class="add-price">￥{{ $value.price }}</td>
+                    <td class="add-num">
+                         <span>
+                              <a href="javascript:;" class="minus" id="cart-minus">-</a>
+                              <input type="text" id="num" class="show" value="{{ $value.num}}" min="1" max="">
+                              <a href="javascript:;" class="add" id="cart-plus">+</a>
+                         </span>
+                    </td>
+                    <td class="add-subtotal" id="add-subtotal">￥480</td>
+                    <td class="add-remove">
+                         <a href="javascript:;" class="pro-remove">删除</a><br/>
+                         <a href="javascript:;" class="star">收藏</a>
+                    </td>
+               </tr>
+               {{/each}}
+               </script>
+          
+
+          <!-- 结算 -->
+          <tfoot>
+               <tr class="cart-balance">
+                    <td class="total" colspan="2">总价（免运费）：<span id="all">￥480</span></td>
+                    <td class="btn" colspan="4">
+                         <a href="javascript:;">去结算</a>
+                         <button>继续购物</button>
+                    </td>
+               </tr>
+          </tfoot>
+     </table>
+
+     <!-- 官方承诺 -->
+     <ul class="prom">
+          <li>官方正品保证</li>
+          <li>全场免运费</li>
+          <li>支付保障</li>
+     </ul>
+
+     <footer></footer>
+</body>
+</html>

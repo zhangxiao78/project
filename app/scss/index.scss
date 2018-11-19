@@ -1,0 +1,155 @@
+@import "component/reset.scss";
+@import "component/header.scss";
+@import "component/lunbo.scss";
+@import "component/footer.scss";
+
+
+.content{
+     height: 870px;
+     width: 100%;
+     .wrap{
+          height: 870px;
+          width: 1100px;
+          margin: 0 auto;
+          .suit{
+               height: 388px;
+               width: 1100px;
+               padding: 50px 0;
+               display: flex;
+               justify-content: space-around;
+               dl{
+                    height: 290px;
+                    width: 250px;
+                    dt{
+                         width: 250px;
+                         height: 190px;
+                         a{
+                              width: 250px;
+                              height: 190px;
+                              display: inline-block;
+                              img{
+                                   width: 250px;
+                                   height: 190px;
+                              }
+                         }
+                    }
+                    dd{
+                         height: 62px;
+                         width: 250px;
+                         text-align: center;
+                         a:first-child{   
+                              display: inline-block;
+                              height: 38px;
+                              width: 250px;
+                              margin: 12px 0;
+                              font-size: 17px;
+                         }
+                         a:last-child{
+                              display: inline-block;
+                              width: 130px;
+                              height: 34px;
+                              background: #670205;
+                              font-size: 12px;
+                              color: #ffffff;
+                              line-height: 34px;
+                         }
+                    }
+               }
+          }
+          .newcomm{
+               height: 482px;
+               width: 1100px;
+               text-align: center;
+               &>p{
+                    color: #333333;
+                    font-size: 14px;
+                    height: 52px;
+                    width: 1100px;
+                    padding-top: 15px;
+                    border-top: 1px solid #333333;
+               }
+               .comm{
+                    width: 1100px;
+                    height: 367px;
+                    display: flex;
+                    justify-content: space-between;
+                    dl{
+                         width: 235px;
+                         margin: 0 20px;
+                         height: 367px;
+                         dt{
+                              width: 235px;
+                              height: 235px;
+                              a{
+                                   display: inline-block;
+                                   width: 235px;
+                                   height: 235px;
+                                   img{
+                                        width: 235px;
+                                        height: 235px;
+                                   }
+                              }
+                         }
+                         dd{
+                              height: 132px;
+                              width: 235px;
+                              text-align: center;
+                              font-size: 14px;
+                              a{
+                                   display: inline-block;
+                                   color: #000000;
+                                   &:first-child{
+                                        height: 48px;
+                                        width: 235px;
+                                   }
+                              }
+                              p{
+                                   height: 25px;
+                                   &+p{
+                                        color: #670205;
+                                        &+a{
+                                             display: inline-block;
+                                             width: 130px;
+                                             height: 34px;
+                                             background: #670205;
+                                             font-size: 12px;
+                                             color: #ffffff;
+                                             line-height: 34px;
+                                        }
+                                   }
+                              }
+                         }
+                    }
+               }
+          }
+     }
+}
+.news{
+     height: 765px;
+     width: 100%;
+     .wrap{
+          width: 1100px;
+          height: 765px;
+          margin: 0 auto;
+          border-top: 1px solid #333333;
+          overflow: hidden;
+          text-align: center;
+          p{
+               color: #333333;
+               font-size: 14px;
+               height: 52px;
+               padding-top: 15px;
+          }
+          a{
+               display: inline-block;
+               width: 1005px;
+               height: 710px;
+               img{
+                    width: 1005px;
+                    height: 710px;
+               }
+          }
+     }
+}
+
+
